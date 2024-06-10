@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:imageEditor="clr-namespace:Syncfusion.Maui.ImageEditor;assembly=Syncfusion.Maui.ImageEditor"
+             x:Class="MauiMopupsSample.MyPopupPage"
+             Title="MyPopupPage" BackgroundColor="#80000000" CloseWhenBackgroundIsClicked="False">
+
+    <Grid RowDefinitions="0.8*,0.1*,0.1*" Margin="10">
+        <imageEditor:SfImageEditor Grid.Row="0" x:Name="imageEditor" Source="photo.jpg"/>
+        <Button Grid.Row="1" Text="Close" Clicked="CloseButton_Clicked"></Button>
+        <Button Text="CropImage" Grid.Row="2" Clicked="Button_Clicked_1" />
+    </Grid>
+
+</mopups:PopupPage>
